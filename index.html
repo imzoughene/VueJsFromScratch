@@ -5,7 +5,16 @@
     </head>
     <body>
         <div id="app">
-            {{title}}
+          <h1>{{title}}</h1>
+          <p>{{diplome}}</p>
+          <div class="" v-html="myhtml">
+
+          </div>
+          <p v-bind:id="dynamicId">I'm me ,I mean I'm a slave of Allah</p>
+          <p v-bind:class="'caracters'+myvarClass">I have dynamic class name</p>
+          <p>4 + 78 = {{4+78}}</p>
+          <p>x + y = {{x+y}}</p>
+          <p>{{ multi() }}</p>
         </div>
         <div id="cat">
             {{name}}
